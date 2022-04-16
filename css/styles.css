@@ -6,6 +6,8 @@
 .table{
   margin: auto;
   padding: 10px;
+  align-items: center;
+  translate: initial ;
 }
 
 .box {
@@ -70,35 +72,97 @@ body{
 #newGame:hover {opacity: 0.6}
 
 .player-winner-X{
-  width: 400px;
-  height: 100px;
+  width: auto;
+  height: auto;
   border: 1px solid #54e467;
   background-color:#3d3d3d ;
   color:solid #6495ED ;
   color: #51eb5e;
-  font-size: 100px;
+  font-size: 80px;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
   border-radius: 25px;
-  margin-top: 270px;
 }
 
 .player-winner-O{
-  width: 400px;
-  height: 100px;
+  width: auto;
+  height: auto;
   border: 1px solid #eb5151;
   background-color:#3d3d3d ;
   color: #eb5151;
-  font-size: 100px;
+  font-size: 80px;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
   border-radius: 25px;
-  margin-top: 270px;
 }
 
 .winner-modal{
   /*visibility: hidden; */
   position: absolute;
-  
+  top: 390px;
+}
 
+
+.form-player{
+  /* visibility: hidden;*/
+  position: relative;
+}
+
+.form-player-newgame{
+  translate: initial ;
+  position: relative;
+  height: 150px;
+  border: 1px solid #549ee4;
+  background-color:#242424 ;
+  opacity: 70%;
+  color:solid #6495ED ;
+  color: #e7ebe8;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  border-radius: 15px;
+  top: 90px;
+  right:5px;
+
+}
+
+.close-modal{
+  color: red;
+  position: absolute;
+  right: 0px;
+  margin-top: 10px;
+  margin-right: 10px;
+  background-color: transparent;
+  border-radius: 50%;
+  border-style: none;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-container{
+  margin-top: 40px;
+  margin-left: 20px;
+  position: absolute;
+
+}
+
+.start-button{
+  position: absolute;
+  bottom: 10px;
+}
+
+.player-x{
+  color: #51eb5e;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.player-o{
+  color: #eb5151;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }

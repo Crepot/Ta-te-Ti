@@ -20,19 +20,47 @@
       <button id="newGame" class="tableContainer">
         Nuevo Juego
       </button>
-      <!--- Vamos a hacer un modalpara el wanador-->
-      <div id="modal-winner" class="winner-modal">
-        <div id="winner" class="player-winner" >
+
+      <!--- Vamos a hacer un modal para el Form de players-->
+      <div id="modal-player" class="modal-player" hidden>
+        <div id="player" class="form-player">
+          <div >
+            <div id="form" class="div-form">
+              <header>
+              <button id="close-button" class="close-modal">X</button>
+              </header>
+              <div  class="form-container">
+              <label class="player-x">Player X</label>
+              <input class="player-1" placeholder="name"></input><br><br>
+              <label class="player-o">Player O</label>
+              <input class="player-2" placeholder="name"></input><br><br>
+              </div>
+              <footer>
+              <button id="start" class="start-button">Comenzar</button>
+              </footer>
+            </div>
+          </div>
         </div>
       </div>
-      <!--- Vamos a hacer un modalpara el wanador-->
+      <!--- ------------------------------------- -->
 
+
+
+
+      <!--- Vamos a hacer un modalpara el ganador-->
+      <div id="modal-winner" class="winner-modal" hidden>
+        <div id="winner" class="player-winner" ></div>
+        <button class="winner-button">De nuevo</button>
+      </div>
+      <!--- ------------------------------------- -->
+
+
+     
     </div>
     <div id="tableContainer" class="tableContainer"></div>
-
-    </div>
   </div>
-  <script src="src/js/teblero.js"></script>
+  <script src="src/js/player.js"></script>
+  <script src="src/js/tablero.js"></script>
   <script src="src/js/utils/utils.js"></script>
 </body>
 </html>
